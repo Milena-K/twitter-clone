@@ -1,0 +1,21 @@
+Info 0    [08:30:00.493] Starting TS Server
+Info 1    [08:30:00.494] Version: 4.8.3
+Info 2    [08:30:00.494] Arguments: /usr/bin/node /home/milena/Dev/js/twitter-clone/node_modules/typescript/lib/tsserver.js --logFile /home/milena/Dev/js/twitter-clone/.log/tsserver.log --logVerbosity info --cancellationPipeName /tmp/729911c2dba270f7965602efa91cc59e/tscancellation*
+Info 3    [08:30:00.494] Platform: linux NodeVersion: 18 CaseSensitive: true
+Info 4    [08:30:00.494] ServerMode: undefined syntaxOnly: false hasUnknownServerMode: undefined
+Info 5    [08:30:00.521] Format host information updated
+Info 6    [08:30:00.559] Search path: /home/milena/Dev/js/twitter-clone/src
+Info 7    [08:30:00.560] For info: /home/milena/Dev/js/twitter-clone/src/createTweet.js :: No config files found.
+Info 8    [08:30:00.570] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 9    [08:30:06.324] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 1 structureChanged: true structureIsReused:: Not Elapsed: 5753.742425000004ms
+Info 10   [08:30:06.324] Project '/dev/null/inferredProject1*' (Inferred)
+Info 11   [08:30:06.324] 	Files (232)
+
+Info 12   [08:30:06.325] -----------------------------------------------
+Info 13   [08:30:06.353] AutoImportProviderProject: found 7 root files in 7 dependencies in 23.250342999992426 ms
+Info 14   [08:30:06.356] Starting updateGraphWorker: Project: /dev/null/autoImportProviderProject1*
+Info 15   [08:30:07.432] Finishing updateGraphWorker: Project: /dev/null/autoImportProviderProject1* Version: 1 structureChanged: true structureIsReused:: Not Elapsed: 1076.439893999981ms
+Info 16   [08:30:07.432] Project '/dev/null/autoImportProviderProject1*' (AutoImportProvider)
+Info 17   [08:30:07.432] 	Files (228)
+
+Info 18   [08:30:07.432] -----------------------------------------------

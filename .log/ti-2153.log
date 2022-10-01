@@ -1,0 +1,60 @@
+[08:30:01.061] Global cache location '/home/milena/.cache/typescript/4.8', safe file path '/home/milena/Dev/js/twitter-clone/node_modules/typescript/lib/typingSafeList.json', types map path /home/milena/Dev/js/twitter-clone/node_modules/typescript/lib/typesMap.json
+[08:30:01.062] Processing cache location '/home/milena/.cache/typescript/4.8'
+[08:30:01.062] Trying to find '/home/milena/.cache/typescript/4.8/package.json'...
+[08:30:01.068] Loaded content of '/home/milena/.cache/typescript/4.8/package.json': {"private":true,"dependencies":{"types-registry":"^0.1.611"},"devDependencies":{"@types/body-parser":"^1.19.2","@types/co":"^4.6.3","@types/d":"^1.0.1","@types/dlv":"^1.1.2","@types/dot":"^1.1.5","@types/dotenv-webpack":"^7.0.3","@types/express":"^4.17.13","@types/facepaint":"^1.2.2","@types/merge-descriptors":"^1.0.1","@types/node-fetch":"^2.6.2","@types/path-browserify":"^1.0.0","@types/react":"^18.0.17","@types/react-dom":"^18.0.6","@types/serve-static":"^1.15.0","@types/sinon":"^10.0.13","@types/standard-version":"^7.0.1","@types/tap":"^15.0.7","@types/testing-library__jest-dom":"^5.14.5","@types/uuid":"^8.3.4"}}
+[08:30:01.069] Loaded content of '/home/milena/.cache/typescript/4.8/package-lock.json'
+[08:30:01.092] Adding entry into typings cache: 'body-parser' => '/home/milena/.cache/typescript/4.8/node_modules/@types/body-parser/index.d.ts'
+[08:30:01.095] Adding entry into typings cache: 'co' => '/home/milena/.cache/typescript/4.8/node_modules/@types/co/index.d.ts'
+[08:30:01.097] Adding entry into typings cache: 'd' => '/home/milena/.cache/typescript/4.8/node_modules/@types/d/index.d.ts'
+[08:30:01.100] Adding entry into typings cache: 'dlv' => '/home/milena/.cache/typescript/4.8/node_modules/@types/dlv/index.d.ts'
+[08:30:01.102] Adding entry into typings cache: 'dot' => '/home/milena/.cache/typescript/4.8/node_modules/@types/dot/index.d.ts'
+[08:30:01.106] Adding entry into typings cache: 'dotenv-webpack' => '/home/milena/.cache/typescript/4.8/node_modules/@types/dotenv-webpack/index.d.ts'
+[08:30:01.110] Adding entry into typings cache: 'express' => '/home/milena/.cache/typescript/4.8/node_modules/@types/express/index.d.ts'
+[08:30:01.112] Adding entry into typings cache: 'facepaint' => '/home/milena/.cache/typescript/4.8/node_modules/@types/facepaint/index.d.ts'
+[08:30:01.115] Adding entry into typings cache: 'merge-descriptors' => '/home/milena/.cache/typescript/4.8/node_modules/@types/merge-descriptors/index.d.ts'
+[08:30:01.118] Adding entry into typings cache: 'node-fetch' => '/home/milena/.cache/typescript/4.8/node_modules/@types/node-fetch/index.d.ts'
+[08:30:01.121] Adding entry into typings cache: 'path-browserify' => '/home/milena/.cache/typescript/4.8/node_modules/@types/path-browserify/index.d.ts'
+[08:30:01.127] Adding entry into typings cache: 'react' => '/home/milena/.cache/typescript/4.8/node_modules/@types/react/index.d.ts'
+[08:30:01.130] Adding entry into typings cache: 'react-dom' => '/home/milena/.cache/typescript/4.8/node_modules/@types/react-dom/index.d.ts'
+[08:30:01.133] Adding entry into typings cache: 'serve-static' => '/home/milena/.cache/typescript/4.8/node_modules/@types/serve-static/index.d.ts'
+[08:30:01.138] Adding entry into typings cache: 'sinon' => '/home/milena/.cache/typescript/4.8/node_modules/@types/sinon/index.d.ts'
+[08:30:01.140] Adding entry into typings cache: 'standard-version' => '/home/milena/.cache/typescript/4.8/node_modules/@types/standard-version/index.d.ts'
+[08:30:01.141] Adding entry into typings cache: 'tap' => '/home/milena/.cache/typescript/4.8/node_modules/@types/tap/index.d.ts'
+[08:30:01.143] Adding entry into typings cache: 'testing-library__jest-dom' => '/home/milena/.cache/typescript/4.8/node_modules/@types/testing-library__jest-dom/index.d.ts'
+[08:30:01.145] Adding entry into typings cache: 'uuid' => '/home/milena/.cache/typescript/4.8/node_modules/@types/uuid/index.d.ts'
+[08:30:01.145] Finished processing cache location '/home/milena/.cache/typescript/4.8'
+[08:30:01.145] Process id: 2162
+[08:30:01.145] NPM location: /usr/bin/npm (explicit '--npmLocation' not  provided)
+[08:30:01.146] validateDefaultNpmLocation: false
+[08:30:01.146] Npm config file: /home/milena/.cache/typescript/4.8/package.json
+[08:30:01.146] Updating types-registry npm package...
+[08:30:01.146] Exec: /usr/bin/npm install --ignore-scripts types-registry@latest
+[08:30:03.226]     Succeeded. stdout:
+    
+    up to date, audited 160 packages in 2s
+
+13 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+[08:30:03.226] Updated types-registry npm package
+[08:30:07.439] Got install request {"projectName":"/dev/null/inferredProject1*","fileNames":["/home/milena/Dev/js/twitter-clone/node_modules/typescript/lib/lib.es5.d.ts","/home/milena/Dev/js/twitter-clone/node_modules/typescript/lib/lib.es2015.d.ts","/home/milena/Dev/js/twitter-clone/node_modules/typescript/lib/lib.es2016.d.ts","/home/milena/Dev/js/twitter-clone/node_modules/typescript/lib/lib.dom.d.ts","/home/milena/Dev/js/twitter-clone/node_modules/typescript/lib/lib.dom.iterable.d.ts","/home/milena/Dev/js/twitter-clone/node_modules/typescript/lib/lib.webworker.importscripts.d.ts","/home/milena/Dev/js/twitter-clone/node_modules/typescript/lib/lib.scripthost.d.ts","/home/milena/Dev/js/twitter-clone/node_modules/typescript/lib/lib.es2015.core.d.ts","/home/milena/Dev/js/twitter-clone/node_modules/typescript/lib/lib.es2015.collection.d.ts","/home/milena/Dev/js/twitter-clone/node_modules/typescript/lib/lib.es2015.generator.d.ts","/home/milena/Dev/js/twitter-clone/node_modules/typescript/lib/lib.es2015.iterable.d.ts","/home/milena/Dev/js/twitter-clone/node_modules/typescript/lib/lib.es2015.promise.d.ts","/home/milena/Dev/js/twitter-clone/node_modules/typescript/lib/lib.es2015.proxy.d.ts","/home/milena/Dev/js/twitter-clone/node_modules/typescript/lib/lib.es2015.reflect.d.ts","/home/milena/Dev/js/twitter-clone/node_modules/typescript/lib/lib.es2015.symbol.d.ts","/home/milena/Dev/js/twitter-clone/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts","/home/milena/Dev/js/twitter-clone/node_modules/typescript/lib/lib.es2016.array.include.d.ts","/home/milena/Dev/js/twitter-clone/node_modules/typescript/lib/lib.es2016.full.d.ts","/home/milena/Dev/js/twitter-clone/src/utils/firestore.js","/home/milena/Dev/js/twitter-clone/src/createTweet.js"],"compilerOptions":{"module":1,"target":3,"jsx":1,"allowJs":true,"allowSyntheticDefaultImports":true,"allowNonTsExtensions":true,"noEmitForJsFiles":true,"maxNodeModuleJsDepth":2},"typeAcquisition":{"enable":true,"include":[],"exclude":[]},"unresolvedImports":[],"projectRootPath":"/home/milena/Dev/js/twitter-clone/src","kind":"discover"}
+[08:30:07.460] Loaded safelist from types map file '/home/milena/Dev/js/twitter-clone/node_modules/typescript/lib/typesMap.json'
+[08:30:07.461] Explicitly included types: []
+[08:30:07.462] Inferred typings from unresolved imports: []
+[08:30:07.462] Result: {"cachedTypingPaths":[],"newTypingNames":[],"filesToWatch":["/home/milena/Dev/js/twitter-clone/src/utils/bower_components","/home/milena/Dev/js/twitter-clone/src/utils/node_modules","/home/milena/Dev/js/twitter-clone/src/bower_components","/home/milena/Dev/js/twitter-clone/src/node_modules"]}
+[08:30:07.463] Finished typings discovery: {"cachedTypingPaths":[],"newTypingNames":[],"filesToWatch":["/home/milena/Dev/js/twitter-clone/src/utils/bower_components","/home/milena/Dev/js/twitter-clone/src/utils/node_modules","/home/milena/Dev/js/twitter-clone/src/bower_components","/home/milena/Dev/js/twitter-clone/src/node_modules"]}
+[08:30:07.463] DirectoryWatcher:: Added:: WatchInfo: /home/milena/Dev/js/twitter-clone/src/utils
+[08:30:07.464] DirectoryWatcher:: Added:: WatchInfo: /home/milena/Dev/js/twitter-clone/src/utils 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[08:30:07.468] Elapsed:: 3.34992800001055ms DirectoryWatcher:: Added:: WatchInfo: /home/milena/Dev/js/twitter-clone/src/utils 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[08:30:07.468] DirectoryWatcher:: Added:: WatchInfo: /home/milena/Dev/js/twitter-clone/src/bower_components
+[08:30:07.468] DirectoryWatcher:: Added:: WatchInfo: /home/milena/Dev/js/twitter-clone/src/bower_components 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[08:30:07.470] Elapsed:: 1.5542610000120476ms DirectoryWatcher:: Added:: WatchInfo: /home/milena/Dev/js/twitter-clone/src/bower_components 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[08:30:07.470] DirectoryWatcher:: Added:: WatchInfo: /home/milena/Dev/js/twitter-clone/src/node_modules
+[08:30:07.470] DirectoryWatcher:: Added:: WatchInfo: /home/milena/Dev/js/twitter-clone/src/node_modules 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[08:30:07.470] Elapsed:: 0.16078900001593865ms DirectoryWatcher:: Added:: WatchInfo: /home/milena/Dev/js/twitter-clone/src/node_modules 1 undefined Project: /dev/null/inferredProject1* watcher already invoked: false
+[08:30:07.470] Sending response:
+    {"projectName":"/dev/null/inferredProject1*","typeAcquisition":{"enable":true,"include":[],"exclude":[]},"compilerOptions":{"module":1,"target":3,"jsx":1,"allowJs":true,"allowSyntheticDefaultImports":true,"allowNonTsExtensions":true,"noEmitForJsFiles":true,"maxNodeModuleJsDepth":2},"typings":[],"unresolvedImports":[],"kind":"action::set"}
+[08:30:07.471] Response has been sent.
+[08:30:07.471] No new typings were requested as a result of typings discovery
