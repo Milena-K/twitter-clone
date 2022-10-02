@@ -1,15 +1,15 @@
 #+TITLE: Notes Twitter Clone
 
 * We will have:
-- Home page that will display the latest tweet from the platform based on the people you are following
-- Explore page what will show the latest tweets from the platform based on what topics you’ve selected
-- Notifications page that will show you the latest interactions on your tweets, like new followers or tweets likes.
-- Profile page where you can see a user’s information, tweets and interact with him
+- [ ] Home page that will display the latest tweet from the platform based on the people you are following
+- [ ] Explore page what will show the latest tweets from the platform based on what topics you’ve selected
+- [ ] Notifications page that will show you the latest interactions on your tweets, like new followers or tweets likes.
+- [ ] Profile page where you can see a user’s information, tweets and interact with him
 
 * Some features:
-- tweet
-- like, comment and retweet on an existing tweet
-- change your profile’s information like name, profile picture, cover image, bio information and topics
-- follow and unfollow people
-- add images to a tweet
-- edit your preferred topics
+- [X] tweet
+- [ ] like, comment and retweet on an existing tweet
+- [ ] change your profile’s information like name, profile picture, cover image, bio information and topics
+- [ ] follow and unfollow people
+- [ ] add images to a tweet
+- [ ] edit your preferred topics
