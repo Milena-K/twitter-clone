@@ -1,0 +1,17 @@
+/* .divv:hover { */
+/*     radius: 20; */
+/*     background: red; */
+/*     animation: growShadow .25s; */
+
+/* } */
+
+.divv:hover {
+    background: rgba(5,7,94,0.5);
+}
+.divv {
+    opacity: 1;
+    transition: background 0.5s;
+    margin: 0.2%;
+    border-radius: 100%;
+    text-align: center;
+}

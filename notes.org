@@ -13,3 +13,8 @@
 - [ ] follow and unfollow people
 - [ ] add images to a tweet
 - [ ] edit your preferred topics
+
+
+* TODO
+// prob ke treba da si napravam .css files
+- [ ] make animations on hover for image and other buttons in NewTweet.

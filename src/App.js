@@ -3,29 +3,32 @@ import Explore from './Explore';
 import Notifications from './Notifications';
 import Profile from './Profile';
 import { Route, Routes } from 'react-router-dom';
+import './App.css';
 
 
 function App() {
-  const style_container = {
+  const container = {
     margin: 0,
     height: "100%",
     display: "flex",
     alignItems: "stretch",
   }
 
-  const style_l_container = {
-    background: "green",
+  const l_container = {
+    background: "lightgreen",
     width: "31%",
+    height: "100%",
   }
-  const style_r_container = {
-    background: "yellow",
+  const r_container = {
+    background: "black",
     width: "69%",
+    height: "100%",
   }
 
   return (
-    <div style={style_container}>
-      <div style={style_l_container}>hi</div>
-      <div style={style_r_container}>
+    <div style={container}>
+      <div style={l_container}>hi</div>
+      <div style={r_container}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/explore" element={<Explore />} />
