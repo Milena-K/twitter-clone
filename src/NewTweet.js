@@ -8,21 +8,35 @@ import { faFaceSmile } from '@fortawesome/free-solid-svg-icons';
 function NewTweet() {
 
   const [file, setFile] = useState(null);
-  const [isOpenEmojiPicker, setIsOpenEmojiPicker] = useState(true);
+  const [isOpenEmojiPicker, setIsOpenEmojiPicker] = useState(null);
   const fileInput = useRef(null);
   const inputRef = useRef('');
+  const EmojiPickerRef = useRef(null);
+  const emojiBtnRef = useRef(null);
+
 
   // Functions //
   const sendTweet = async (e) => {
     const tweet = inputRef.current.value;
-    // console.log("New Twt:", tweet);
     createTweet(tweet);
     console.log('Tweet is sent!')
   }
   const toggleEmojiPicker = () => {
     setIsOpenEmojiPicker(!isOpenEmojiPicker);
-    console.log(isOpenEmojiPicker)
   }
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (
+        EmojiPickerRef.current &&
+        !EmojiPickerRef.current.contains(event.target) &&
+        !emojiBtnRef.current.contains(event.target)
+      )
+        setIsOpenEmojiPicker(false)
+    }
+    document.addEventListener('click', handleClickOutside, true);
+  });
+
 
 
   // Styles //
@@ -39,6 +53,7 @@ function NewTweet() {
     display: "inline",
   }
 
+
   // Components //
   return (
     <div>
@@ -46,7 +61,8 @@ function NewTweet() {
 
       </div>
 
-      <div style={new_tweet_container}>
+      <div
+        style={new_tweet_container}>
         <input
           ref={inputRef}
           type='text'
@@ -64,7 +80,9 @@ function NewTweet() {
             setFile={setFile}
           />
           <button
+            ref={emojiBtnRef}
             className="icon-btn"
+            id='emojiBtn'
             onClick={toggleEmojiPicker}
           >
             <FontAwesomeIcon
@@ -73,9 +91,7 @@ function NewTweet() {
           </button>
         </div>
 
-        <div tabIndex={0}
-          onBlur={toggleEmojiPicker}
-        >
+        <div ref={EmojiPickerRef}>
           {isOpenEmojiPicker ?
             <EmojiPicker
               inputRef={inputRef} />
