@@ -8,7 +8,7 @@ import { faFaceSmile } from '@fortawesome/free-solid-svg-icons';
 function NewTweet() {
 
   const [file, setFile] = useState(null);
-  const [isOpenEmojiPicker, setIsOpenEmojiPicker] = useState(null);
+  const [isOpenEmojiPicker, setIsOpenEmojiPicker] = useState(true);
   const fileInput = useRef(null);
   const inputRef = useRef('');
 
@@ -19,8 +19,9 @@ function NewTweet() {
     createTweet(tweet);
     console.log('Tweet is sent!')
   }
-  const toggleEmojiPicker = (e) => {
+  const toggleEmojiPicker = () => {
     setIsOpenEmojiPicker(!isOpenEmojiPicker);
+    console.log(isOpenEmojiPicker)
   }
 
 
@@ -71,11 +72,18 @@ function NewTweet() {
               icon={faFaceSmile} />
           </button>
         </div>
-        {isOpenEmojiPicker ?
-          <EmojiPicker inputRef={inputRef} /> : null
-        }
+
+        <div tabIndex={0}
+          onBlur={toggleEmojiPicker}
+        >
+          {isOpenEmojiPicker ?
+            <EmojiPicker
+              inputRef={inputRef} />
+            : null
+          }
+        </div>
       </div>
-    </div>
+    </div >
   )
 }
 

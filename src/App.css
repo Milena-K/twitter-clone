@@ -42,3 +42,11 @@
 .work {
   text-align: center
 }
+
+.hideEmojiPicker {
+  display: none;
+}
+
+.showEmojiPicker {
+  display: block;
+}
