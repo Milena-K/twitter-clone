@@ -6,5 +6,6 @@ export const createTweet = async (tweet) => {
   const t = {
     text: tweet,
   }
+  console.log('stored.')
   await setDoc(doc(db, 'tweets', uuidv1()), t)
 }

@@ -1,17 +1,44 @@
-/* .divv:hover { */
-/*     radius: 20; */
-/*     background: red; */
-/*     animation: growShadow .25s; */
-
-/* } */
-
-.divv:hover {
-    background: rgba(5,7,94,0.5);
+.icon-btn:hover {
+  background: rgba(173, 216, 230, 1);
 }
-.divv {
-    opacity: 1;
-    transition: background 0.5s;
-    margin: 0.2%;
-    border-radius: 100%;
-    text-align: center;
+
+.icon-btn {
+  display: flex;
+  background: transparent;
+  border: 0px;
+  color: blue;
+  opacity: 1;
+  transition: background 0.3s;
+  border-radius: 50%;
+  text-align: center;
+  padding: 0;
+}
+.icon-svg {
+  align-text: center;
+  padding: 7px;
+  margin: 3px;
+}
+
+.picker-container {
+  position: relative;
+  width: 300px;
+}
+
+.emoji-icon {
+  cursor: pointer;
+  position: absolute;
+  top: 8px;
+  right: 5px;
+}
+
+.input-style {
+  padding: 7px 30px 7px 10px;
+  width: calc(100% - 40px);
+  border-radius: 3px;
+  border: 1px solid #999;
+  margin-bottom: 10px;
+}
+
+.work {
+  text-align: center
 }

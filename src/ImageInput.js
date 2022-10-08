@@ -13,15 +13,9 @@ const ImageInput = ({ file, setFile }) => {
 
   const fileInput = useRef(null);
 
-  const upload_btn = {
-    background: "transparent",
-    border: "0px",
-    color: "blue",
-    marginTop: "15%",
-  }
 
   return (
-    <div className="divv">
+    <div>
       <input
         type='file'
         name='image'
@@ -30,9 +24,13 @@ const ImageInput = ({ file, setFile }) => {
         style={{ display: 'none' }}
       />
       <button
-        style={upload_btn}
+        className='icon-btn'
         onClick={() => fileInput.current.click()}
-      ><FontAwesomeIcon icon={faImage} /></button>
+      >
+        <FontAwesomeIcon
+          className='icon-svg'
+          icon={faImage} />
+      </button>
     </div>
   )
 }

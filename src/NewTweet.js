@@ -1,19 +1,28 @@
-import { useRef, useState } from 'react';
+import { useRef, useState, useEffect } from 'react';
 import { createTweet } from './createTweet';
 import ImageInput from './ImageInput';
+import EmojiPicker from './EmojiPicker';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFaceSmile } from '@fortawesome/free-solid-svg-icons';
 
 function NewTweet() {
 
-  const [file, setFile] = useState(null)
+  const [file, setFile] = useState(null);
+  const [isOpenEmojiPicker, setIsOpenEmojiPicker] = useState(null);
   const fileInput = useRef(null);
+  const inputRef = useRef('');
 
   // Functions //
   const sendTweet = async (e) => {
-    e.preventDefault();
-    const tweet = e.target.form[1].value;
+    const tweet = inputRef.current.value;
     // console.log("New Twt:", tweet);
     createTweet(tweet);
+    console.log('Tweet is sent!')
   }
+  const toggleEmojiPicker = (e) => {
+    setIsOpenEmojiPicker(!isOpenEmojiPicker);
+  }
+
 
   // Styles //
   const container = {
@@ -32,10 +41,39 @@ function NewTweet() {
   // Components //
   return (
     <div>
-      <div style={prof_pic_container}></div>
+      <div style={prof_pic_container}>
+
+      </div>
+
       <div style={new_tweet_container}>
-        <ImageInput file={file} setFile={setFile} />
-        {console.log(file)}
+        <input
+          ref={inputRef}
+          type='text'
+          id='tweetInput'
+          name='tweetInput'
+        />
+        <button onClick={sendTweet}>Send</button>
+
+        <div
+          style={{ display: "flex" }}
+        >
+          <ImageInput
+            className="icon-on-new-tweet"
+            file={file}
+            setFile={setFile}
+          />
+          <button
+            className="icon-btn"
+            onClick={toggleEmojiPicker}
+          >
+            <FontAwesomeIcon
+              className='icon-svg'
+              icon={faFaceSmile} />
+          </button>
+        </div>
+        {isOpenEmojiPicker ?
+          <EmojiPicker inputRef={inputRef} /> : null
+        }
       </div>
     </div>
   )

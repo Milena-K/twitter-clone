@@ -20,7 +20,7 @@ function App() {
     height: "100%",
   }
   const r_container = {
-    background: "black",
+    background: "white",
     width: "69%",
     height: "100%",
   }

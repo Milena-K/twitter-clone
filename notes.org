@@ -1,5 +1,23 @@
 #+TITLE: Notes Twitter Clone
 
+* Tickets:
+** 07.10.22'
+- [X] make emoji picker hide and show when pressing a button
+- [X] insert selected emoji as text inside tweet
+- [X] Change icon of emoji picker to blue
+- [ ] add a profile pic on the left side of the input field for the tweet
+- [X] store the tweet in firebase
+
+** 08.10.22'
+- [ ] show stored posts on home page
+- [ ] add buttons for comments, retweets and likes
+
+** 09.10.22'
+- [ ] make different users
+- [ ] work on profile page
+
+
+
 * We will have:
 - [ ] Home page that will display the latest tweet from the platform based on the people you are following
 - [ ] Explore page what will show the latest tweets from the platform based on what topics you’ve selected
