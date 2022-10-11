@@ -1,0 +1,13 @@
+#HomeContainer {
+  margin: 0;
+  height: 100%;
+}
+
+.thin-borders {
+  border-left: 1px;
+  border-top: 0px;
+  border-bottom: 1px;
+  border-right: 1px;
+  border-color: rgba(170,184,194,0.3);
+  border-style: solid;
+}

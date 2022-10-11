@@ -1,17 +1,19 @@
 import NewTweet from "./NewTweet";
-
+import './styles/Home.css'
 const Home = () => {
-  const container = {
-    margin: 0,
-    height: "100%",
-    display: "flex",
-    alignItems: "center",
-    justifyItems: "center",
-  }
 
   return (
-    <div style={container}>
-      <NewTweet />
+    <div id='HomeContainer'>
+      <div
+        className="thin-borders"
+        id='NewTweetContainer'>
+        <NewTweet />
+      </div>
+      <div
+        className="thin-borders"
+        id="TweetsContainer">
+        the tweets
+      </div>
     </div>
   )
 }

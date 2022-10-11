@@ -2,16 +2,18 @@ import { useRef, useState, useEffect } from 'react';
 import { createTweet } from './createTweet';
 import ImageInput from './ImageInput';
 import EmojiPicker from './EmojiPicker';
+import ProfilePic from './ProfilePic';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFaceSmile } from '@fortawesome/free-solid-svg-icons';
+
+import './styles/NewTweet.css';
 
 function NewTweet() {
 
   const [file, setFile] = useState(null);
   const [isOpenEmojiPicker, setIsOpenEmojiPicker] = useState(null);
-  const fileInput = useRef(null);
   const inputRef = useRef('');
-  const EmojiPickerRef = useRef(null);
+  const emojiPickerRef = useRef(null);
   const emojiBtnRef = useRef(null);
 
 
@@ -28,8 +30,8 @@ function NewTweet() {
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (
-        EmojiPickerRef.current &&
-        !EmojiPickerRef.current.contains(event.target) &&
+        emojiPickerRef.current &&
+        !emojiPickerRef.current.contains(event.target) &&
         !emojiBtnRef.current.contains(event.target)
       )
         setIsOpenEmojiPicker(false)
@@ -37,69 +39,62 @@ function NewTweet() {
     document.addEventListener('click', handleClickOutside, true);
   });
 
-
-
-  // Styles //
-  const container = {
-    margin: 0,
-    height: "100%",
-    alignItems: "stretch",
-  }
-  const prof_pic_container = {
-    display: "inline",
-    width: "50%",
-  }
-  const new_tweet_container = {
-    display: "inline",
-  }
-
-
   // Components //
   return (
-    <div>
-      <div style={prof_pic_container}>
-
-      </div>
-
-      <div
-        style={new_tweet_container}>
-        <input
-          ref={inputRef}
-          type='text'
-          id='tweetInput'
-          name='tweetInput'
-        />
-        <button onClick={sendTweet}>Send</button>
-
-        <div
-          style={{ display: "flex" }}
-        >
-          <ImageInput
-            className="icon-on-new-tweet"
-            file={file}
-            setFile={setFile}
-          />
-          <button
-            ref={emojiBtnRef}
-            className="icon-btn"
-            id='emojiBtn'
-            onClick={toggleEmojiPicker}
-          >
-            <FontAwesomeIcon
-              className='icon-svg'
-              icon={faFaceSmile} />
-          </button>
+    <div >
+      <p className='page-title'>Home</p>
+      <div id='newTweet1'>
+        <div id='profilePicContainer'>
+          <ProfilePic />
         </div>
 
-        <div ref={EmojiPickerRef}>
-          {isOpenEmojiPicker ?
-            <EmojiPicker
-              inputRef={inputRef} />
-            : null
-          }
-        </div>
-      </div>
-    </div >
+        <div id='newTweetContainer1'>
+          <div id='newTweet'>
+            <input
+              autoComplete='off'
+              ref={inputRef}
+              type='text'
+              placeholder="What's happening?"
+              id='tweetInput'
+              name='tweetInput'
+            />
+          </div>
+          {/* <hr /> */}
+          {/* Buttons */}
+          <div id='btnsNewTweet' >
+            <div id='btnsImageEmoji'>
+              <ImageInput
+                file={file}
+                setFile={setFile}
+              />
+              <button
+                ref={emojiBtnRef}
+                className="icon-btn"
+                id='emojiBtn'
+                onClick={toggleEmojiPicker}
+              >
+                <FontAwesomeIcon
+                  className='icon-svg'
+                  icon={faFaceSmile} />
+              </button>
+            </div>
+            <div id='sendTweet'>
+              <button
+                id='btnSendTweet'
+                onClick={sendTweet}>Tweet</button>
+            </div>
+          </div>
+          {/* EmojiPicker */}
+          <div ref={emojiPickerRef}>
+            {isOpenEmojiPicker ?
+              <EmojiPicker
+                inputRef={inputRef} />
+              : null
+            }
+          </div>
+        </div >
+      </div >
+    </div>
   )
 }
 

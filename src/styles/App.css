@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  height: 100%;
+  font-family: 'Roboto';
+  color: #F5F8FA;
+  background: black;
+}
+
+input:focus-visible {
+  outline: none;
+}
+
+.container {
+  margin: 0;
+  height: 100%;
+  display: flex;
+  alignItems: stretch;
+}
+.lContainer {
+  width: 31%;
+  height: 100%;
+}
+.cContainer {
+  width: 31%;
+  height: 100%;
+}
+.rContainer {
+  flex: 2;
+  height: 100%;
+}

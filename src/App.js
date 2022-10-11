@@ -3,32 +3,14 @@ import Explore from './Explore';
 import Notifications from './Notifications';
 import Profile from './Profile';
 import { Route, Routes } from 'react-router-dom';
-import './App.css';
+import './styles/App.css';
 
 
 function App() {
-  const container = {
-    margin: 0,
-    height: "100%",
-    display: "flex",
-    alignItems: "stretch",
-  }
-
-  const l_container = {
-    background: "lightgreen",
-    width: "31%",
-    height: "100%",
-  }
-  const r_container = {
-    background: "white",
-    width: "69%",
-    height: "100%",
-  }
-
   return (
-    <div style={container}>
-      <div style={l_container}>hi</div>
-      <div style={r_container}>
+    <div className='container'>
+      <div className='lContainer'>hi</div>
+      <div className='cContainer'>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/explore" element={<Explore />} />
@@ -36,6 +18,9 @@ function App() {
           {/* Tuka treba da se stavi /$username namesto /profile route */}
           <Route path="/profile" element={<Profile />} />
         </Routes>
+      </div>
+      <div className='rContainer'>
+        hi
       </div>
     </div>
   )

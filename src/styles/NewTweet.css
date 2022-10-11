@@ -1,0 +1,145 @@
+.icon-btn:hover {
+  background: rgba(29,161,242,0.2);
+}
+
+.icon-btn {
+  background: transparent;
+  border: 0px;
+  color: #1DA1F2;
+  opacity: 1;
+  transition: background 0.15s;
+  border-radius: 50%;
+  padding: 10px;
+  display: flex;
+}
+
+.page-title {
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin: 0;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  padding-left: 18px;
+  padding-right: 18px;
+
+}
+
+#tweetInput {
+  border: none;
+  background: black;
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  color: white;
+  padding-top: 13px;
+  padding-bottom: 16px;
+  padding-left: 10px;
+
+}
+
+#btnSendTweet {
+  justify-self: end;
+  color: white;
+  font-weight: 600;
+  border-radius: 25px;
+  border: none;
+  width: 85px;
+  height: 35px;
+  padding-top: 5px;
+  background: #1DA1F2;
+  text-align: center;
+}
+
+#btnsImageEmoji {
+  align-items: center;
+  display: flex;
+}
+
+#btnsNewTweet {
+  /* align-items: flex-end; */
+  display: flex;
+  margin-top: 15px;
+  padding-bottom: 13px;
+}
+
+#sendTweet {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-grow:2;
+}
+
+#newTweet1 {
+  display: flex;
+  padding-left: 18px;
+  padding-right: 18px;
+}
+#newTweet {
+  /* display: flex; */
+}
+
+/* hr { */
+/*   height: 0px; */
+/*   width: 100%; */
+/*   border: none; */
+/*   margin: 0 17px 0 0; */
+/*   border-top: 1px solid rgba(170,184,194,0.3); */
+/* } */
+
+#newTweetContainer1 {
+  /* align-items: flex-end; */
+  display: flex;
+  flex-direction: column;
+  flex: 4;
+  margin-top: 18px;
+  /* height: 220px; */
+  /* width: 500px; */
+  /* margin-top: 50px; */
+}
+
+.profile-pic {
+  width: 50px;
+  height: 50px;
+}
+
+#profilePic {
+  border-radius: 50%;
+  background-size: contain;
+  background: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+#profilePicContainer {
+  margin-right: 8px;
+  margin-top: 10px;
+}
+
+.icon-svg {
+  height: 18px;
+  width: 18px;
+}
+
+
+/* .picker-container { */
+/*   position: relative; */
+/*   width: 300px; */
+/* } */
+
+/* .emoji-icon { */
+/*   cursor: pointer; */
+/*   position: absolute; */
+/*   top: 8px; */
+/*   right: 5px; */
+/* } */
+
+/* .work { */
+/*   text-align: center */
+/* } */
+
+/* .hideEmojiPicker { */
+/*   display: none; */
+/* } */
+
+/* .showEmojiPicker { */
+/*   display: block; */
+/* } */
