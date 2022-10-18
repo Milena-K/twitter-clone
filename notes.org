@@ -1,12 +1,11 @@
 #+TITLE: Notes Twitter Clone
 
 * Tickets:
-
-** 08.10.22'
-- [ ] show stored posts on home page
+** 19.10.22'
+- [ ] style the tweets
 - [ ] add buttons for comments, retweets and likes
 
-** 09.10.22'
+** 20.10.22'
 - [ ] make different users
 - [ ] work on profile page
 
@@ -19,7 +18,6 @@
 - [ ] Profile page where you can see a user’s information, tweets and interact with him
 
 * Some features:
-- [X] tweet
 - [ ] like, comment and retweet on an existing tweet
 - [ ] change your profile’s information like name, profile picture, cover image, bio information and topics
 - [ ] follow and unfollow people
@@ -28,5 +26,4 @@
 
 
 * TODO
-// prob ke treba da si napravam .css files
-- [ ] make animations on hover for image and other buttons in NewTweet.
+- [ ] fix new tweet moving to bottom
