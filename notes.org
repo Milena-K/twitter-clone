@@ -1,12 +1,6 @@
 #+TITLE: Notes Twitter Clone
 
 * Tickets:
-** 07.10.22'
-- [X] make emoji picker hide and show when pressing a button
-- [X] insert selected emoji as text inside tweet
-- [X] Change icon of emoji picker to blue
-- [ ] add a profile pic on the left side of the input field for the tweet
-- [X] store the tweet in firebase
 
 ** 08.10.22'
 - [ ] show stored posts on home page
