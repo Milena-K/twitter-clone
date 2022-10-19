@@ -1,6 +1,5 @@
 import { useRef, useState } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faImage } from '@fortawesome/free-solid-svg-icons';
+import { ReactComponent as ImageSVG } from './img/image-svgrepo-com.svg';
 
 const ImageInput = ({ file, setFile }) => {
 
@@ -27,9 +26,10 @@ const ImageInput = ({ file, setFile }) => {
         className='icon-btn'
         onClick={() => fileInput.current.click()}
       >
-        <FontAwesomeIcon
-          className='icon-svg'
-          icon={faImage} />
+        <ImageSVG className='image-svg' id='imageSVG' />
+        {/* <FontAwesomeIcon */}
+        {/*   className='icon-svg' */}
+        {/*   icon={faImage} /> */}
       </button>
     </div>
   )

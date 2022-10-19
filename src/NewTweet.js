@@ -3,6 +3,7 @@ import { createTweet } from './createTweet';
 import ImageInput from './ImageInput';
 import EmojiPicker from './EmojiPicker';
 import ProfilePic from './ProfilePic';
+import { ReactComponent as EmojiSVG } from './img/smiley-svgrepo-com.svg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFaceSmile } from '@fortawesome/free-solid-svg-icons';
 
@@ -73,9 +74,7 @@ function NewTweet() {
                 id='emojiBtn'
                 onClick={toggleEmojiPicker}
               >
-                <FontAwesomeIcon
-                  className='icon-svg'
-                  icon={faFaceSmile} />
+                <EmojiSVG className='icon-svg' id='emojiSVG' />
               </button>
             </div>
             <div id='sendTweet'>

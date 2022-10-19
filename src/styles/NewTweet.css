@@ -1,5 +1,5 @@
 .icon-btn:hover {
-  background: rgba(29, 161, 242, 0.2);
+  background: rgba(29, 161, 242, 0.1);
 }
 
 .icon-btn {
@@ -39,11 +39,11 @@
   justify-self: end;
   color: white;
   font-weight: 600;
+  font-size: 15px;
   border-radius: 25px;
   border: none;
-  width: 85px;
-  height: 35px;
-  padding-top: 5px;
+  width: 75px;
+  height: 32px;
   background: #1da1f2;
   text-align: center;
 }
@@ -100,8 +100,20 @@
 }
 
 .icon-svg {
-  height: 18px;
-  width: 18px;
+  height: 17px;
+  width: 17px;
+}
+
+#imageSVG {
+  stroke: #1da1f2;
+  fill: #1da1f2;
+  height: 17px;
+  width: 17px;
+}
+
+#emojiSVG {
+  stroke: #1da1f2;
+  fill: #1da1f2;
 }
 
 /* .picker-container { */
