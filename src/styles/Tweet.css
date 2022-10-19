@@ -1,0 +1,75 @@
+#profilePicContainer {
+  margin-right: 14px;
+  margin-top: 10px;
+}
+
+#tweetContainer {
+  border-bottom: 1px solid rgba(170, 184, 194, 0.3);
+  padding-top: 12px;
+  padding: 0px 16px;
+  display: flex;
+}
+
+#rightOfPPic {
+  flex-direction: row;
+  flex-grow: 2;
+  padding-bottom: 12px;
+}
+
+#topTweet {
+  display: flex;
+  font-size: 15px;
+  padding-top: 4px;
+}
+
+#tweetInfo > * {
+  display: inline-block;
+  margin-top: 8px;
+  padding-right: 4px;
+  margin-bottom: 0px;
+}
+
+#midTweet {
+  font-size: 15px;
+  padding-top: 2px;
+}
+
+#botTweet {
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 45%;
+}
+
+#retweetIcon {
+  color: rgba(171, 184, 194, 1);
+
+  width: 20px;
+  height: 20px;
+  margin-right: 12px;
+}
+#commentIcon {
+  stroke: rgba(170, 184, 194, 0.5);
+  fill: rgba(170, 184, 194, 0.5);
+  width: 20px;
+  height: 20px;
+  margin-right: 12px;
+}
+#heartIcon {
+  stroke: rgba(170, 184, 194, 0.5);
+  stroke-width: 5%;
+  fill: rgba(170, 184, 194, 0.5);
+  width: 20px;
+  height: 20px;
+  margin-right: 12px;
+}
+
+#botTweet button {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  border: none;
+}
+#botTweet span {
+  color: rgba(170, 184, 194, 0.7);
+}

@@ -44,7 +44,7 @@ function NewTweet() {
     <div >
       <p className='page-title'>Home</p>
       <div id='newTweet1'>
-        <div id='profilePicContainer'>
+        <div className='profilePicContainer'>
           <ProfilePic />
         </div>
 
