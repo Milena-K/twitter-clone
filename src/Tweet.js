@@ -27,7 +27,7 @@ const Tweet = ({ dateCreated, text }) => {
   };
 
   return (
-    <div id="tweetContainer">
+    <div class="tweetContainer">
 
       <div id='profilePicContainer'>
         <ProfilePic />
@@ -63,17 +63,17 @@ const Tweet = ({ dateCreated, text }) => {
         </div>
 
         <div id='botTweet'>
-          <button>
-            <Comment id='commentIcon' />
-            <span>182</span>
+          <button className='botTweetBtn' id='commentBtn'>
+            <Comment className='botTweetIcon' id='commentIcon' />
+            <p>182</p>
           </button>
-          <button>
-            <Retweet id='retweetIcon' />
-            <span>243</span>
+          <button className='botTweetBtn' id='retweetBtn'>
+            <Retweet className='botTweetIcon' id='retweetIcon' />
+            <p>243</p>
           </button>
-          <button>
-            <Heart id='heartIcon' />
-            <span>143</span>
+          <button className='botTweetBtn' id='heartBtn'>
+            <Heart className='botTweetIcon' id='heartIcon' />
+            <p>143</p>
           </button>
         </div>
       </div>

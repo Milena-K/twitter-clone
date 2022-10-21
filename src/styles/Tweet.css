@@ -3,11 +3,16 @@
   margin-top: 10px;
 }
 
-#tweetContainer {
+.tweetContainer {
   border-bottom: 1px solid rgba(170, 184, 194, 0.3);
   padding-top: 12px;
   padding: 0px 16px;
   display: flex;
+  transition: background-color 0.2s;
+}
+
+.tweetContainer:hover {
+  background-color: rgba(170, 184, 194, 0.05);
 }
 
 #rightOfPPic {
@@ -41,13 +46,51 @@
   padding-right: 45%;
 }
 
-#retweetIcon {
+.botTweetIcon {
   color: rgba(171, 184, 194, 1);
-
   width: 20px;
   height: 20px;
   margin-right: 12px;
+  transition: background 0.15s;
+  border-radius: 50%;
+  padding: 7px;
 }
+
+.botTweetBtn {
+  transition: background-color 0.15s;
+  transition: color 0.15s;
+}
+
+#retweetBtn:hover #retweetIcon {
+  background-color: rgba(10, 201, 150, 0.2);
+  color: #0ac996;
+}
+#retweetBtn:hover p {
+  color: #0ac996;
+}
+
+#commentBtn {
+  transition: stroke 0.15s;
+  transition: fill 0.15s;
+}
+#commentBtn:hover #commentIcon {
+  background-color: rgba(29, 161, 242, 0.2);
+  stroke: rgba(29, 161, 242, 1);
+  fill: rgba(29, 161, 242, 1);
+}
+#commentBtn:hover p {
+  color: #1da1f2;
+}
+
+#heartBtn:hover #heartIcon {
+  background-color: rgba(240, 29, 127, 0.2);
+  stroke: rgba(240, 29, 127, 1);
+  fill: rgba(240, 29, 127, 1);
+}
+#heartBtn:hover p {
+  color: #f01d7f;
+}
+
 #commentIcon {
   stroke: rgba(170, 184, 194, 0.5);
   fill: rgba(170, 184, 194, 0.5);
@@ -71,6 +114,7 @@
   border: none;
   padding: 0;
 }
-#botTweet span {
+
+#botTweet p {
   color: rgba(170, 184, 194, 0.7);
 }

@@ -1,5 +1,5 @@
 import { useReducer, useState, useEffect } from "react";
-import { applyActionCode, getAuth } from "firebase/auth";
+// import { applyActionCode, getAuth } from "firebase/auth";
 import {
   query,
   collection,
@@ -24,8 +24,8 @@ const Home = () => {
       orderBy("timestamp", "desc"),
       limit(30)
     );
-    onSnapshot(recentTweetsQuery, function (snapshot) {
-      snapshot.docChanges().forEach(function (change) {
+    onSnapshot(recentTweetsQuery, function(snapshot) {
+      snapshot.docChanges().forEach(function(change) {
         data = [...data, change.doc.data()];
         setTweets(data);
         setLoaded(true);
