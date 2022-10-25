@@ -1,3 +1,4 @@
+/* for mobile */
 body {
   margin: 0;
   height: 100%;
@@ -5,26 +6,72 @@ body {
   color: #F5F8FA;
   background: black;
 }
-
 input:focus-visible {
   outline: none;
 }
-
 .container {
-  margin: 0;
   height: 100%;
   display: flex;
-  alignItems: stretch;
+  width: fit-content;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-55%, -50%);
 }
-.lContainer {
-  width: 31%;
-  height: 100%;
+
+@media only screen and (min-width: 500px) and (max-width: 987px) {
+  /* for bigger phones */
+  .lContainer {
+    /* background-color: red; */
+  }
+
 }
-.cContainer {
-  width: 31%;
-  height: 100%;
+
+
+@media only screen and (min-width: 988px) and (max-width: 1264px) {
+  /* for tablet */
+  .lContainer {
+    /* background-color: blue; */
+    height: 100%;
+    width: 20%;
+  }
+  .mainContainer {
+    display: flex;
+    width: 50%;
+    height: 100%;
+  }
+  .cContainer {
+    height: 100%;
+    width: 600px;
+  }
+  .rContainer {
+    height: 100%;
+  }
+
 }
-.rContainer {
-  flex: 2;
-  height: 100%;
+
+@media only screen and (min-width: 1265px) {
+  /* for desktop */
+
+  .lContainer {
+    /* background-color: green; */
+    align-items: flex-end;
+    height: 100%;
+    width: 300px;
+    margin-right: 25px;
+  }
+  .mainContainer {
+    display: flex;
+    height: 100%;
+  }
+  .cContainer {
+    height: 100%;
+    width: 600px;
+  }
+  .rContainer {
+    height: 100%;
+    width: 300px;
+    margin-left: 25px;
+    /* background-color: green; */
+  }
 }

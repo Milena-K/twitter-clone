@@ -4,8 +4,6 @@ import ImageInput from './ImageInput';
 import EmojiPicker from './EmojiPicker';
 import ProfilePic from './ProfilePic';
 import { ReactComponent as EmojiSVG } from './img/smiley-svgrepo-com.svg';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFaceSmile } from '@fortawesome/free-solid-svg-icons';
 
 import './styles/NewTweet.css';
 
@@ -19,10 +17,18 @@ function NewTweet() {
 
 
   // Functions //
+  const pressEnter = (e) => {
+    if (e.code == 'Enter') {
+      console.log("pressed")
+      sendTweet();
+      inputRef.current.value = '';
+    }
+  }
   const sendTweet = async (e) => {
     const tweet = inputRef.current.value;
     createTweet(tweet);
-    console.log('Tweet is sent!')
+    console.log('Tweet is sent!');
+    inputRef.current.value = '';
   }
   const toggleEmojiPicker = () => {
     setIsOpenEmojiPicker(!isOpenEmojiPicker);
@@ -52,6 +58,7 @@ function NewTweet() {
         <div id='newTweetContainer1'>
           <div id='newTweet'>
             <input
+              onKeyPress={pressEnter}
               autoComplete='off'
               ref={inputRef}
               type='text'
@@ -84,10 +91,11 @@ function NewTweet() {
             </div>
           </div>
           {/* EmojiPicker */}
-          <div ref={emojiPickerRef}>
+          <div id='emojiPicker' ref={emojiPickerRef}>
             {isOpenEmojiPicker ?
               <EmojiPicker
-                inputRef={inputRef} />
+                inputRef={inputRef}
+              />
               : null
             }
           </div>

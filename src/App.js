@@ -10,17 +10,19 @@ function App() {
   return (
     <div className='container'>
       <div className='lContainer'>hi</div>
+      <div className='mainContainer'>
       <div className='cContainer'>
-        <Routes>
+        <Routes> 
           <Route path="/" element={<Home />} />
           <Route path="/explore" element={<Explore />} />
           <Route path="/notifications" element={<Notifications />} />
           {/* Tuka treba da se stavi /$username namesto /profile route */}
           <Route path="/profile" element={<Profile />} />
         </Routes>
-      </div>
-      <div className='rContainer'>
-        hi
+        </div>
+        <div className='rContainer'>
+          hi
+        </div>
       </div>
     </div>
   )

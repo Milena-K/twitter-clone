@@ -1,4 +1,4 @@
-import { useReducer, useState, useEffect } from "react";
+import { React, useState, useEffect } from "react";
 // import { applyActionCode, getAuth } from "firebase/auth";
 import {
   query,
@@ -14,7 +14,7 @@ import "./styles/Home.css";
 
 const Home = () => {
   const [loaded, setLoaded] = useState(false);
-  const [tweets, setTweets] = useState();
+  const [tweets, setTweets] = useState(null);
 
   // Functions
   useEffect(() => {
@@ -28,9 +28,9 @@ const Home = () => {
       snapshot.docChanges().forEach(function(change) {
         data = [...data, change.doc.data()];
         setTweets(data);
-        setLoaded(true);
       });
     });
+    setLoaded(true);
   }, [loaded]);
 
   return (
@@ -40,18 +40,18 @@ const Home = () => {
         {/* BUG: When new tweet is created it's added to the bottom*/}
       </div>
       <div className="thin-borders" id="TweetsContainer">
-        {loaded &&
+        {tweets &&
           tweets.map((tweet) => {
             if (tweet.timestamp) {
               const seconds = tweet.timestamp.seconds;
               var date = new Date(1970, 0, 1); // epoch
               date.setSeconds(seconds);
-              return <Tweet dateCreated={date} text={tweet.text} />;
+              return <Tweet key={tweet.id} dateCreated={date} text={tweet.text} />;
             }
             return null;
           })}
       </div>
-    </div>
+    </div >
   );
 };
 

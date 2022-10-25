@@ -39,11 +39,12 @@
   justify-self: end;
   color: white;
   font-weight: 600;
-  font-size: 15px;
+  font-size: 16px;
   border-radius: 25px;
   border: none;
-  width: 75px;
-  height: 32px;
+  width: 85px;
+  padding: 10px 0px 10px 0px;
+  height: 35px;
   background: #1da1f2;
   text-align: center;
 }
@@ -71,27 +72,12 @@
   padding-left: 18px;
   padding-right: 18px;
 }
-#newTweet {
-  /* display: flex; */
-}
-
-/* hr { */
-/*   height: 0px; */
-/*   width: 100%; */
-/*   border: none; */
-/*   margin: 0 17px 0 0; */
-/*   border-top: 1px solid rgba(170,184,194,0.3); */
-/* } */
 
 #newTweetContainer1 {
-  /* align-items: flex-end; */
   display: flex;
   flex-direction: column;
   flex: 4;
   margin-top: 18px;
-  /* height: 220px; */
-  /* width: 500px; */
-  /* margin-top: 50px; */
 }
 
 .profilePicContainer {
@@ -106,36 +92,21 @@
 
 #imageSVG {
   stroke: #1da1f2;
+  stroke-width: 4%;
   fill: #1da1f2;
-  height: 17px;
-  width: 17px;
+  height: 18px;
+  width: 18px;
 }
 
 #emojiSVG {
-  stroke: #1da1f2;
+  stroke: #1da1f2 ;
+  stroke-width: 4%;
   fill: #1da1f2;
+  height: 18px;
+  width: 18px;
 }
 
-/* .picker-container { */
-/*   position: relative; */
-/*   width: 300px; */
-/* } */
-
-/* .emoji-icon { */
-/*   cursor: pointer; */
-/*   position: absolute; */
-/*   top: 8px; */
-/*   right: 5px; */
-/* } */
-
-/* .work { */
-/*   text-align: center */
-/* } */
-
-/* .hideEmojiPicker { */
-/*   display: none; */
-/* } */
-
-/* .showEmojiPicker { */
-/*   display: block; */
-/* } */
+#emojiPicker {
+  position: absolute;
+  transform: translate(0%, 40%);
+}

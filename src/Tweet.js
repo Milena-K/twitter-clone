@@ -4,7 +4,8 @@ import { ReactComponent as Retweet } from './img/retweet-svgrepo-com.svg';
 import { ReactComponent as Comment } from './img/comment-svgrepo-com.svg';
 import { ReactComponent as Heart } from './img/heart-svgrepo-com.svg';
 
-const Tweet = ({ dateCreated, text }) => {
+const Tweet = (props) => {
+  const { dateCreated, text } = { ...props };
 
   const postedXTimeAgo = () => {
     const dateNow = new Date();
@@ -12,7 +13,7 @@ const Tweet = ({ dateCreated, text }) => {
     const tzOffset = -dateNow.getTimezoneOffset() / 60;
     const hourCreated = dateCreated.getHours() + tzOffset;
     const hourDiff = dateNow.getHours() - hourCreated;
-    const minutesDiff = dateNow.getMinutes() - dateCreated.getMinutes() + 8; // weird minutes offset
+    const minutesDiff = dateNow.getMinutes() - dateCreated.getMinutes();
 
     if (dateCreated.getFullYear() != dateNow.getFullYear())
       return mdyCreated[1] + " " + mdyCreated[2] + ", " + mdyCreated[3];
@@ -27,7 +28,7 @@ const Tweet = ({ dateCreated, text }) => {
   };
 
   return (
-    <div class="tweetContainer">
+    <div className="tweetContainer">
 
       <div id='profilePicContainer'>
         <ProfilePic />

@@ -1,6 +1,7 @@
 #HomeContainer {
   margin: 0;
   height: 100%;
+  flex-grow: 2;
 }
 
 .thin-borders {
