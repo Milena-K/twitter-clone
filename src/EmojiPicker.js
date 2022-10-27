@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Picker from 'emoji-picker-react';
+import './styles/EmojiPicker.css';
 // import { Emoji, Theme } from 'emoji-picker-react';
 
 const EmojiPicker = ({ inputRef }) => {
